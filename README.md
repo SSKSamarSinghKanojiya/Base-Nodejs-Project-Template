@@ -30,7 +30,11 @@ we structure the API response in controllers and send the output.
 ### Setup the project
 
 - Download this template from github and open it in your favourite text editor. 
-In the root directory create a env file and add the following env variables
+- Go inside the folder path and execute the following command.
+  ```
+    npm install
+  ```
+- In the root directory create a env file and add the following env variables
 
 ```
       PORT <port number of your choice>
@@ -65,6 +69,17 @@ ex:
   }
 }
 ```
+- Go inside the `src` folder and execute the following command
+  ```
+  npx sequelize init
+  ```
+- By executing the above command you will get migrations and seeders folder along with a config.json 
+  inside the config folder
 - If you are setting up your development environment, then write the name of your username of your db, 
   password of your db and dialect mention whatever db you are using the for example : mysql, mariadb etc
   - If you're setting up test or prod enviroment, make sure you also replace the host with the hosted db url.
+
+  - to run the server execute 
+  ```
+  npm run dev
+  ```
